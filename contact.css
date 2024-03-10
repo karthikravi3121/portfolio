@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('screenshots/contactbg.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+.container {
+    max-width: 395px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px); 
+}
+
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: darkslategrey;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: lightgoldenrodyellow;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-size: larger;
+    transition: background-color 0.3s;
+    width: 80px;
+}
+
+button[type="submit"]:hover {
+    background-color: gray;
+    color:black
+}
+
+input{
+    font-size: larger;
+}
