@@ -1,0 +1,310 @@
+:root {
+  --color-primary: #0073ff;
+  --color-white: #e9e9e9;
+  --color-black: #141d28;
+  --color-black-1: #212b38;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #101820;
+}
+
+.logo {
+  color: var(--color-white);
+  font-size: 30px;
+}
+
+.logo span {
+  color: var(--color-primary);
+}
+
+.menu-bar {
+  height: 75px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  position: relative;
+  background: #101820;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  padding: 10px 30px;
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 20px;
+  color: darkgray;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.menu-bar ul li a:hover {
+  color: whitesmoke;
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+.dropdown-menu {
+  display: none;
+  z-index: 2; 
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #FB6542;
+  z-index: 2; 
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+  z-index: 2; 
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: #375E97;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  background: linear-gradient(to right, #E7E8D1, #A7BEAE);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  font-size: larger;
+  color: black;
+  font-family: 'Segoe UI';
+}
+
+.color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFA500;
+  border-radius: 5px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+  pointer-events: none; 
+}
+
+.overlay-text {
+  color: black;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.color-overlay a {
+  pointer-events: auto; 
+}
+
+.project:hover .color-overlay {
+  opacity: 0;
+}
+
+.project.hidden {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.project h2 {
+  color: #333;
+  text-align: center;
+  line-height: 8vh;
+}
+
+.project p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.container-left {
+  float: left;
+  width: 60%; 
+  margin: 0 5%; 
+}
+
+.project-image {
+  width: 100%; 
+  max-height: 50vh; 
+  object-fit: cover; 
+}
+
+.container-right {
+  float: right;
+  width: 60%; 
+  clear: right;
+  margin: 0 5%; 
+}
+
+.project {
+  position: relative;
+}
+
+.image-slider {
+  position: relative;
+}
+
+.slides {
+  display: flex;
+}
+
+.slide {
+  display: none;
+  opacity: 0;
+  width: 100%; 
+  height: auto; 
+  transition: opacity 2s ease;
+}
+
+.slide.active {
+  display: block;
+  opacity: 1;
+}
+
+.dots {
+  text-align: center;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.dot.active {
+  background-color: darkslateblue;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px; 
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: yellow;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .menu-bar ul li {
+    padding: 10px 20px; /* Reduce padding on smaller screens */
+  }
+
+  .project {
+    margin: 15px; /* Reduce margin for projects */
+  }
+
+  .container-left, .container-right {
+    width: 100%; /* Stack containers on smaller screens */
+    float: none; /* Clear floats */
+  }
+
+  .project-image {
+    max-height: 30vh; /* Adjust image height */
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-bar {
+    flex-direction: column; /* Stack menu items */
+    align-items: flex-start; /* Align items to the left */
+    padding: 10px 5%; /* Add padding for better spacing */
+  }
+
+  .menu-bar ul {
+    flex-direction: column; /* Stack menu links */
+    width: 100%; /* Full width */
+  }
+
+  .menu-bar ul li {
+    width: 100%; /* Make menu items full width */
+    text-align: left; /* Align text to the left */
+    padding: 10px 0; /* Adjust padding */
+  }
+
+  .menu-bar ul li a {
+    display: block; /* Make links block level */
+    padding: 10px 20px; /* Add padding for better click area */
+  }
+
+  .project {
+    font-size: 1rem; /* Adjust font size */
+  }
+
+  .project h2 {
+    font-size: 1.5rem; /* Adjust heading size */
+  }
+
+  .project p {
+    font-size: 0.9rem; /* Adjust paragraph size */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 24px; /* Adjust logo size */
+  }
+
+  .menu-bar ul li a {
+    font-size: 18px; /* Adjust link size */
+  }
+
+  .project {
+    padding: 15px; /* Reduce padding in projects */
+  }
+
+  .overlay-text {
+    font-size: 20px; /* Adjust overlay text size */
+  }
+}
+

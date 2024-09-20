@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('screenshots/contactbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Ensures the background stays fixed */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scrollbars */
+}
+
+/* Container styles */
+.container {
+    max-width: 395px; /* Keep the original width */
+    width: 100%; /* Ensure it adjusts for smaller screens */
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.05); /* Ensure content is readable */
+}
+
+/* Title */
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: darkslategrey;
+    font-size: 1.8rem; /* Slightly responsive */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align form elements */
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: lightgoldenrodyellow;
+    font-size: 1.1rem;
+    align-self: flex-start; /* Make label align to the left */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Make inputs take full width of the container */
+    max-width: 100%; /* Ensure they don't exceed container's width */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Include padding and borders in the width */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical; /* Allows textarea resizing only vertically */
+}
+
+button[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-size: larger;
+    transition: background-color 0.3s;
+    width: 100px; /* Fixed width */
+}
+
+button[type="submit"]:hover {
+    background-color: gray;
+    color: black;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 480px) {
+    .container {
+        max-width: 90%; /* Allow some flexibility for very small screens */
+    }
+
+    .container h1 {
+        font-size: 1.5rem; /* Adjust heading size for smaller screens */
+    }
+
+    button[type="submit"] {
+        width: 90px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 1.1rem;
+    }
+
+    button[type="submit"] {
+        width: 120px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container h1 {
+        font-size: 2.2rem;
+    }
+
+    button[type="submit"] {
+        width: 130px;
+    }
+}
