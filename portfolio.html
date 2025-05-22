@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+  <link rel="stylesheet" href="portfolio.css" />
+  <link rel="icon" type="image" href="screenshots/portfolio_icon.jpg">
+  <title>"My Projects Page"</title>
+</head>
+<body onload="showAllProjects()">
+  <div class="menu-bar">
+    <h1 class="logo"><span></span></h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About</a></li>
+      <li>
+        <a href="#">Projects <i class="fas fa-caret-down"></i></a>
+        <div class="dropdown-menu">
+          <ul>
+            <li><a href="#" onclick="showAllProjects()">All</a></li>
+            <li>
+              <a href="#">Self-Made <i class="fas fa-caret-right"></i></a>
+              <div class="dropdown-menu-1">
+                <ul>
+                  <li><a href="#" onclick="showCategoryProjects('html-css-js')">HTML, CSS, JS</a></li>
+                  <li><a href="#" onclick="showCategoryProjects('react-js')">React JS</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#" onclick="showCategoryProjects('Team-Work')">Team-Work</a></li>
+            <li><a href="#" onclick="showCategoryProjects('Internship')">Internship</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="contact.html" target="_blank">Network</a></li>
+    </ul>
+  </div>
+
+  
+  
+  <div class="container-left">
+    <div class="projects-container">
+        <div class="html-css-js projects self-made">
+            <div class="project">
+              <div class="color-overlay"><div class="overlay-text">StickyNotes</div></div>
+                <div class="image-slider">
+                    <div class="slides">
+                        <div class="slide"><img class="project-image" src="screenshots/sticky/Screenshot (77).png"></div>
+                        <div class="slide"><img class="project-image" src="screenshots/sticky/Screenshot (78).png"></div>
+                    </div>
+                    <div class="dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <p><b>Description:</b><br>
+                  <b>StickyNotes</b> is a user-friendly web application that allows users to create and manage sticky notes digitally.
+                     Users can add their notes to each sticky note created and copy the content by clicking on the copy button. 
+                     The application utilizes local storage to persist the data even if the page is reloaded, ensuring that the user's notes are retained.</p>
+                <p><b>Developed Using : HTML, CSS & JavaScript</b></p>
+                <p>You can access StickyNotes by clicking <a href="https://karthikravi3121.github.io/stickynotes/" target="_blank">here</a>.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <div class="container-right">
+    <div class="projects-container">
+      <div class="html-css-js projects self-made">
+          <div class="project">
+            <div class="color-overlay"><div class="overlay-text">ImagineX</div></div>
+              <div class="image-slider">
+                  <div class="slides">
+                      <div class="slide"><img class="project-image" src="screenshots/imagineX/imagineX.png"></div>
+                  </div>
+              </div>
+              <p><b>Description:</b><br>
+                <b>ImagineX</b> Developed a web-based text-to-image application using HTML, CSS, and JavaScript, integrated with a Hugging Face model for AI-powered image generation. The project enables users to input any text prompt and receive a unique, AI-generated image that visually represents their description, showcasing practical experience in combining modern web technologies with advanced machine learning models</p>
+                <p><b>Developed Using : HTML, CSS & JavaScript</b></p>
+              <p>You can play the game by clicking <a href="https://text-to-image-hazel.vercel.app/" target="_blank">here</a>.</p>
+          </div>
+      </div>
+  </div>
+  </div>
+
+  <div class="container-left">
+    <div class="projects-container">
+        <div class="html-css-js projects self-made">
+            <div class="project">
+              <div class="color-overlay"><div class="overlay-text">Spark</div></div>
+                <div class="image-slider">
+                    <div class="slides">
+                        <div class="slide"><img class="project-image" src="screenshots/sparky/spark1.png"></div>
+                        <div class="slide"><img class="project-image" src="screenshots/sparky/spark2.png"></div>
+                    </div>
+                    <div class="dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <br>
+                <p><b>Description:</b><br>
+                  <b>Spark</b> Designed an interactive chatbot using HTML, CSS, and JavaScript that utilizes Google's Gemini
+API for image processing, text-to-speech, and voice input capabilities in order to process user
+inputs as accurate responses, designed to facilitate smooth interaction with an intuitive interface
+on all devices.</p>
+                <p><b>Developed Using : HTML, CSS & JavaScript</b></p>
+                <p>Gain access to Spark, your AI chatbot companion by clicking <a href="https://spark2-0.vercel.app/" target="_blank">here</a>.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <div class="container-right">
+    <div class="projects-container">
+        <div class="react-js projects self-made">
+            <div class="project">
+              <div class="color-overlay"><div class="overlay-text">EchoSync_without Auth</div></div>
+                <div class="image-slider">
+                    <div class="slides">
+                        <div class="slide"><img class="project-image" src="screenshots/echosync_withoutAuth/Screenshot (85).png"></div>
+                        <div class="slide"><img class="project-image" src="screenshots/echosync_withoutAuth/Screenshot (86).png"></div>
+                    </div>
+                    <div class="dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <p><b>Description:</b><br>
+                  <b>EchoSync_without Auth</b> is a versatile platform facilitating secure content sharing and synchronization. 
+                  Users can conveniently upload text or files, name them for easy identification, and seamlessly access them from any device. 
+                  Leveraging Google Firebase's real-time database, content synchronization occurs instantly, ensuring accessibility from anywhere. 
+                  Each user maintains exclusive access to their uploaded content while enabling others to view and utilize shared materials. 
+                  With the ability to download files and copy text, the website serves as a comprehensive tool for efficient content management and sharing.</p>
+                <p><b>Developed Using : React JS</b></p>
+                <p>You can access it by just clicking <a href="https://echo-sync-without-auth.vercel.app/" target="_blank">here</a>.</p>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+
+  <div class="container-left">
+    <div class="projects-container">
+        <div class="react-js projects self-made">
+            <div class="project">
+              <div class="color-overlay"><div class="overlay-text">EchoSync_with Auth</div></div>
+                <div class="image-slider">
+                    <div class="slides">
+                        <div class="slide"><img class="project-image" src="screenshots/echosync_withAuth/Screenshot (82).png"></div>
+                        <div class="slide"><img class="project-image" src="screenshots/echosync_withAuth/Screenshot (83).png"></div>
+                        <div class="slide"><img class="project-image" src="screenshots/echosync_withAuth/Screenshot (84).png"></div>
+                    </div>
+                    <div class="dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <p><b>Description:</b><br>
+                  <b>EchoSync_with Auth</b> offers a dynamic platform for users to securely authenticate using their Gmail accounts. 
+                  Once logged in, users gain access to a range of functionalities, including the ability to upload images, files, or text. 
+                  Before uploading, users are prompted to name their content for easy identification. Leveraging Google Firebase's real-time database, the application ensures that uploaded content is synchronized across devices in real-time, enabling seamless access from anywhere. 
+                  Users can effortlessly download files and images, copy text for sharing or usage, and conveniently preview uploaded images directly within the browser.
+                  The project ensures that each individual can access only their own uploaded content. </p>
+                <p><b>Developed Using : React JS</b></p>
+                <p>You can access it by just clicking <a href="https://echo-sync-with-auth.vercel.app/" target="_blank">here</a>.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-right">
+  <div class="projects-container">
+      <div class="react-js projects self-made">
+          <div class="project">
+            <div class="color-overlay"><div class="overlay-text">Talkify</div></div>
+              <div class="image-slider">
+                  <div class="slides">
+                      <div class="slide"><img class="project-image" src="screenshots/talkify/Screenshot (87).png"></div>
+                      <div class="slide"><img class="project-image" src="screenshots/talkify/Screenshot (89).png"></div>
+                      <div class="slide"><img class="project-image" src="screenshots/talkify/Screenshot (91).png"></div>
+                  </div>
+                  <div class="dots">
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                  </div>
+              </div>
+              <p><b>Description:</b><br>
+                <b>Talkify</b> is a chatting platform revolutionizing online communication. 
+                Seamlessly integrate your Google account to access the platform and set up a personalized username upon your first login. 
+                Once registered, enjoy uninterrupted chatting experiences without the hassle of repeated authentication. 
+                Engage in dynamic conversations with friends, or new users in real-time, ensuring instant communication. 
+                With robust security measures in place, Talkify prioritizes user privacy and data protection. 
+                Take control of your conversations with the ability to delete messages, maintaining clarity and organization effortlessly.
+                Powered by Google Firestore database, each message and user data are securely stored along with the timestamp, ensuring reliability and efficiency in data management. </p>
+              <p><b>Developed Using : React JS</b></p>
+              <p>Start chatting by just clicking <a href="https://radiant-sfogliatella-d3438e.netlify.app/" target="_blank">here</a>.</p>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container-left">
+  <div class="projects-container">
+    <div class="internship projects" style="display: none;">
+          <div class="project">
+            <div class="color-overlay"><div class="overlay-text">Admin Dashboard</div></div>
+              <div class="image-slider">
+                  <div class="slides">
+                      <div class="slide"><img class="project-image" src="screenshots/intern/Screenshot (92).png"></div>
+                      <div class="slide"><img class="project-image" src="screenshots/intern/Screenshot (93).png"></div>
+                  </div>
+                  <div class="dots">
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                  </div>
+              </div>
+              <p><b>Description:</b><br>
+                <b>Admin Dashboard</b> was developed during my one-month virtual internship.
+                   This dashboard was designed to be responsive across different devices.</p>
+              <p><b>Developed Using : HTML & CSS</b></p>
+          </div>
+      </div>
+  </div>
+</div>
+
+  <div class="container-right">
+  <div class="projects-container">
+  <div class="team-work projects" style="display: none;">
+    <div class="project">
+      <div class="color-overlay"><div class="overlay-text">Smart Parking System</div></div>
+      <p><b>Description:</b><br>
+         Our IoT team successfully developed a <b>Smart Parking System</b> using Arduino Uno.
+         With six slots allocated for parking, our system effectively monitors occupancy in real-time. 
+         Leveraging ultrasonic sensors strategically placed at each slot, the system continuously measures distances to detect the presence of vehicles. 
+         If all slots are occupied, indicating full capacity, the gate remains closed to prevent entry. </p>
+      <p><b>Required Components: Arduino Uno, Servo Motor, 1-Bread Board, 6 IR Sensors, Jumper Wires & Powerbank</b></p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="container-left">
+  <div class="projects-container">
+  <div class="team-work projects" style="display: none;">
+    <div class="project">
+      <div class="color-overlay"><div class="overlay-text">CloneFlix</div></div>
+      <p><b>Description:</b><br>
+        <b>Cloneflix,</b> crafted by our team. 
+        Our platform features a login page for seamless access, a subscription page for premium content, and a curated selection of movies and series. 
+        Immerse yourself in each title with theme music playing as you explore synopses and discover the talented cast and crew. 
+        With Cloneflix, every click brings you closer to the magic of the silver screen.
+      </p>
+      <p><b>Developed Using : HTML, CSS & JavaScript</b></p>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+<div class="container-right">
+  <div class="projects-container">
+    <div class="team-work projects" style="display: none;">
+          <div class="project">
+            <div class="color-overlay"><div class="overlay-text">Efficiency Meter</div></div>
+              <div class="image-slider">
+                  <div class="slides">
+                      <div class="slide"><img class="project-image" src="screenshots/efficiency_meter/Screenshot (94).png" alt="image 1"></div>
+                      <div class="slide"><img class="project-image" src="screenshots/efficiency_meter/Screenshot (95).png" alt="image 2"></div>
+                      <div class="slide"><img class="project-image" src="screenshots/efficiency_meter/Screenshot (96).png" alt="image 3"></div>
+                      <div class="slide"><img class="project-image" src="screenshots/efficiency_meter/Screenshot (97).png" alt="image 4"></div>
+                  </div>
+                  <div class="dots">
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                  </div>
+              </div>
+              <p><b>Description:</b><br>
+                <b>Efficiency Meter</b> developed by our team, is a powerful web application designed to streamline resource utilization tracking and analysis.
+                With a focus on enhancing productivity, the platform offers comprehensive features for capturing and calculating the time spent by individuals across various activities, including documentation and coding.
+                Leveraging Google Firebase as its centralized database, the app ensures seamless data management and robust security.
+                Through intuitive analytics and detailed reports, organizations gain valuable insights into resource allocation, identifying areas for improvement and optimizing productivity.
+                The integration of Google authentication for login and signup enhances user convenience and security, ensuring a seamless experience for all users.</p>
+              <p><b>Developed Using : React JS</b></p>
+              <p>You can access it by just clicking <a href="https://efficiency-meter-three.vercel.app/" target="_blank">here</a>.</p>
+          </div>
+      </div>
+  </div>
+</div>
+<script src="portfolio.js"></script>
+</body>
+</html>
